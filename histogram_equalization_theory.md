@@ -18,9 +18,9 @@ This technique enhances contrast by spreading frequently occurring intensity val
 
 For a grayscale image with intensity levels ranging from 0 to \( L - 1 \), the probability distribution function (PDF) is defined as:
 
-\[
+$$
 p_r(r_k) = \frac{n_k}{MN}
-\]
+$$
 
 Where:
 
@@ -39,9 +39,9 @@ If the histogram is narrow and concentrated, the image has low contrast.
 
 The cumulative distribution function (CDF) is obtained by accumulating the probabilities from intensity level 0 up to \( r_k \):
 
-\[
+$$
 CDF(r_k) = \sum_{j=0}^{k} p_r(r_j)
-\]
+$$
 
 The CDF has the following properties:
 
@@ -57,9 +57,9 @@ The CDF is the key component in histogram equalization.
 
 The transformation function used in histogram equalization is:
 
-\[
+$$
 s_k = (L - 1) \cdot CDF(r_k)
-\]
+$$
 
 Where:
 
